@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar StudIQ</title>
+    <!-- Bootstrap CSS Lokal -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .bg-blue {
+            background-color: #007bff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            width: 250px;
+        }
+        .login-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .login-box form {
+            width: 100%;
+            max-width: 300px;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <!-- Sisi Kiri (Logo dengan Blue Background) -->
+        <div class="col-md-6 bg-blue">
+            <img src="logoStudIQ.png" alt="StudIQ Logo" class="logo">
+        </div>
+
+        <!-- Sisi Kanan (Login Form) -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <div class="login-box">
+                <form action="#">
+                    <h2 class="text-center fw-bold">Daftar</h2>             
+
+        <!--input nama depan dan nama belakang -->
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Nama Depan</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Maukkan Nama depan">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Nama Belakang</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Masukkan Nama Belakang">
+          </div>
+ 
+        <!-- EMAIL SUBMISSION -->
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Masukkan Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+            </div>
+
+        <!-- PASSWORD -->
+        <label for="inputPassword" class="form-label">Password</label>
+        <input type="password" id="inputPassword5" class="form-control" placeholder="Masukkan Password">
+        <div id="passwordHelpBlock" class="form-text">
+            Kata sandi kamu harus terdiri dari 8-20 karakter, mengandung huruf dan angka, dan tidak boleh mengandung spasi, karakter khusus, atau emoji.
+          </div> <br>
+
+
+        <!--keterangan kelas-->
+        <label for="kelas">Kelas</label>
+          <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Pilih kelas kamu</option>
+            <option value="1">Kelas 1</option>
+            <option value="2">Kelas 2</option>
+            <option value="3">Kelas 3</option>
+          </select>
+                   <br> 
+          
+          <a href="login.html" class="btn-primary btn rounded-pill">Daftar</a>
+                    
+                    <!-- Link ke homepage -->
+                    <div class="back-link">
+                        <a href="index.html" class="btn btn-link">Kembali</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS Lokal dan dependencies -->
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

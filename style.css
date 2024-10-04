@@ -101,3 +101,54 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+.section-class {
+    background-color: rgb(243, 250, 255);
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.container-class {
+    padding: 5rem;
+    gap: 4rem;
+    flex-direction: row;
+}
+
+.judul-h2 {
+    font-size: 1.875rem;
+    line-height: 42px;
+    margin: 0px 0px 40px;
+    text-align: center;
+}
+
+.container-infokelas {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+    unicode-bidi: isolate;
+}
+
+.word-4sd {
+    left: 45px;
+    position: absolute;
+    bottom: 40px;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.judul-sd {
+    font-family: Poppins, system-ui;
+    color: blue;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.isi-sd {
+    font-size: 1.25rem;
+    font-family: Overpass, system-ui;
+    color: blue;
+}

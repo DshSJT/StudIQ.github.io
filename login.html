@@ -6,6 +6,7 @@
     <title>Login StudIQ</title>
     <!-- Bootstrap CSS Lokal -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styleLoginPage.css" rel="stylesheet">
     <style>
         body, html {
             height: 100%;
@@ -21,20 +22,6 @@
         .logo {
             width: 250px;
         }
-        .login-box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
-        .login-box form {
-            width: 100%;
-            max-width: 300px;
-        }
-        .back-link {
-            text-align: center;
-            margin-top: 15px;
-        }
     </style>
 </head>
 <body>
@@ -43,30 +30,48 @@
     <div class="row h-100">
         <!-- Sisi Kiri (Logo dengan Blue Background) -->
         <div class="col-md-6 bg-blue">
-            <img src="logoStudIQ.png" alt="StudIQ Logo" class="logo">
+            <img src="picAsset/logoStudIQ.png" alt="StudIQ Logo" class="logo">
         </div>
 
         <!-- Sisi Kanan (Login Form) -->
         <div class="col-md-6 d-flex justify-content-center align-items-center">
             <div class="login-box">
-                <form action="#">
-                    <h2 class="text-center fw-bold">Masuk</h2>
-                    <div class="form-group">
-                        <label for="email">Alamat e-mail</label>
-                        <input type="email" class="form-control" id="email" required>
-                        <small class="form-text text-danger">E-mail tidak boleh kosong.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Kata sandi</label>
-                        <input type="password" class="form-control" id="password" minlength="8" required>
-                        <small class="form-text text-muted">Minimal 8 karakter.</small>
-                    </div>
-                    <a href="home.html" class="btn-primary btn rounded-pill">Masuk</a>
-                    
+                <div class="back-link">
+                    <a href="index.html" class="btn btn-link">Kembali</a>
+                </div>
+                <form class="container">
+                    <h1 class="login-tittle highlight fw-bold">Masuk</h1>
+            
+                    <section class="input-box">
+                        <input type="text" name="username" placeholder="Username">
+                        <i class="bx bxs-user"></i>
+                    </section>
+                    <section class="input-box">
+                        <input type="password" name="password" placeholder="Password">
+                        <i class='bx bxs-lock-alt'></i>
+                    </section>
+            
+                    <section class="remember-forget-box">
+                        <div class="remember-me">
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            <label for="remember-me">
+                                <h5>Ingat saya</h5>
+                            </label>
+                        </div>
+                        <a class="forget-password" href="#">
+                            <h5>Lupa Password?</h5>
+                        </a>
+                    </section>
+            
+                    <a href="home.html" class="login-button">
+                        login
+                    </a>                    
+            
+                    <h5 class="dont-have-an-account">
+                        Don't have an account?
+                        <a href="register.html"><b>Daftar</b></a>
+                    </h5>
                     <!-- Link ke homepage -->
-                    <div class="back-link">
-                        <a href="index.html" class="btn btn-link">Kembali</a>
-                    </div>
                 </form>
             </div>
         </div>
